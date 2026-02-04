@@ -1,0 +1,12 @@
+{
+
+  "rewrites": [
+
+    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/about.html" }
+ { "source": "/(.*)", "destination": "/skills.html" }
+ { "source": "/(.*)", "destination": "/register.html" }
+
+  ]
+
+}
