@@ -361,10 +361,71 @@ footer {
 footer p { text-align: center !important; margin: 0; }
 
 
-/* 8 MOBILE RESPONSIVENESS*/
+/* =========================================
+   8. MOBILE RESPONSIVENESS
+   ========================================= */
 @media (max-width: 768px) {
-    .hero-title { font-size: 3rem; }
-    .hero-container { padding-left: 5%; padding-right: 5%; }
-    .about-container { flex-direction: column; text-align: center; }
-    .biocontent { text-align: center; }
+    /* LANDING PAGE FIXES */
+    .hero-title { 
+        font-size: 2.8rem; /* Smaller title for mobile */
+        text-align: center !important;
+    }
+    
+    .hero-subtitle {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .hero-container { 
+        padding-left: 5%; 
+        padding-right: 5%; 
+    }
+
+    .hero-box {
+        max-width: 100%;
+        align-items: center; /* Center buttons and text on mobile */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn-portal {
+        text-align: center;
+        width: 100%; /* Full width buttons for easier tapping */
+    }
+
+    /* ABOUT ME FIXES */
+    .about-container { 
+        flex-direction: column; /* Image on top, text on bottom */
+        text-align: center; 
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 220px; /* Smaller image for mobile */
+        height: 220px;
+    }
+
+    /* REGISTER PAGE / FORM FIXES */
+    .register-page {
+        padding: 15px;
+    }
+
+    form {
+        width: 100% !important; /* Force form to fit screen width */
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack Submit/Reset buttons */
+    }
+
+    /* CARD FIXES */
+    .card {
+        width: 90%; /* Cards take up most of the screen width */
+    }
 }
