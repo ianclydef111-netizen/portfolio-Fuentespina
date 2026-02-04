@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAN CLYDE FUENTESPINA - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+<body class = "register-page">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ICF PORTFOLIO</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="skills.html">Skills & Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <div class="register-wrapper">
+    <form action="#" method="post" autocomplete="on" target="_self">
+        
+        <header>
+            <h1>NBA 2K28 PORTAL<br>Enter the court</br></h1>
+            <h1>Welcome to My Website</h1>
+        </header>
+
+        <fieldset>
+            <legend>Account Access</legend>
+         <div class="logo-container">
+            <img src="https://vignette.wikia.nocookie.net/basketball/images/d/dd/NBA.png/revision/latest?cb=20130202174133&path-prefix=de" height="150" width="100">
+        </div>
+            <label for="username">Player Username:</label>
+            <input type="text" id="username" name="username" placeholder="USER NAME" required maxlength="15">
+
+            <label for="email">Associated Email:</label>
+            <input type="email" id="email" name="email" placeholder="lebron@lakers.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required>
+            <legend>Player Identity</legend>
+
+            <label for="jersey">Jersey Number:</label>
+            <input type="number" id="jersey" name="jersey" min="0" max="99" value="23">
+
+            <label for="draft_date">Draft Eligibility Date:</label>
+            <input type="date" id="draft_date" name="draft_date" required>
+
+            <label for="team">Primary Team Selection:</label>
+            <select id="team" name="team">
+                <option value="lakers">LA Lakers</option>
+                <option value="warriors">GS Warriors</option>
+                <option value="bulls">Chicago Bulls</option>
+                <option value="celtics">Boston Celtics</option>
+            </select>
+            <label for="position">Preferred Position:</label>
+            <select id="position" name="position">
+                <option value="PG"> POINT GUARD</option>
+                <option value="SG"> SHOOTING GUARD</option>
+                <option value="SF"> SMALL FORWARD</option>
+                <option value="PF"> POWER FORWARD</option>
+                <option value="C"> CENTER</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Verification</legend>
+
+            <label for="profile_pic">Upload Player Avatar:</label>
+            <input type="file" id="profile_pic" name="profile_pic">
+
+            <label for="bio">Player Bio / Career Goals:</label>
+            <textarea id="bio" name="bio" rows="2" placeholder="Tell the scouts about yourself..."></textarea>
+
+        <div class="btn-group">
+            <button type="submit">SIGN IN</button>
+            <button type="reset">CLEAR</button>
+        </div>
+        </fieldset>
+    </form>
+     </div>
+</body>
+</html>
